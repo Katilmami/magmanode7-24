@@ -30,7 +30,9 @@ bot.on('end', () => {
     console.log('Bot disconnected from the server');
 });
 autoVersionForge(bot);
-
+app.get('/mamijoin', (req, res) => {
+    autoVersionForge(bot);
+});
 // Sunucu başlatma
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
