@@ -32,6 +32,7 @@ bot.on('end', () => {
 autoVersionForge(bot);
 app.get('/mamijoin', (req, res) => {
     autoVersionForge(bot);
+    res.send('<h1>Sunucuya katılma isteği gönderildi</h1>');
 });
 // Sunucu başlatma
 const PORT = process.env.PORT || 3000;
